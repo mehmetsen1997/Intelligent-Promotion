@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+
+	background-color: whitesmoke;
+
+}
+
+.homepageTextLeft {
+
+	margin-top: 2%;
+	margin-right: 50%;
+	margin-left: 5%;
+
+}
+
+.homepageTextRight {
+
+	margin-top: 2%;
+	margin-right: 5%;
+	margin-left: 50%;
+
+}
+
+.menu{
+
+	background-color: rgba(15, 15, 5, 0.562);
+	overflow: hidden;
+}
+
+.menu a{
+
+	text-align: center;
+  	padding: 20px 30px;
+  	text-decoration: none;
+  	font-size: 20px;
+	float: left;
+	color: white;
+	border: #000 2px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu a:hover {
+
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+
+.menu a.active {
+	background-color: #4CAF50;
+	color: white;
+  }
+
+.card{
+
+	overflow: hidden;
+	background-color: rgba(19, 19, 16, 0.705);
+	margin-left: 82%;
+}
+
+.aboutUs{
+
+	margin-top: 2%;	
+	margin-left: 6%;
+	width: 900px;
+}
+
+.aboutUs img{
+
+	width: 900px;
+	height: 300px;
+}
+
+.homepage{
+
+	margin-top: 2%;	
+	margin-left: 6%;
+	width: 900px;
+}
+
+.homepage img{
+
+	width: 1200px;
+	height: 400px;
+}
+
+
+.products{
+
+	margin-top: 2%;	
+	margin-left: 6%;
+	
+}
+
+.products img {
+
+	width: 250px;
+	height: 225px;
+}
+
+.products button{
+
+	text-align: center;
+	width: 100px;
+	margin-top: 15px;
+	margin-left: 20%;
+}
+
+.productDeneme{
+
+	margin-top: 2%;	
+	margin-left: 6%;
+	
+}
+.productDeneme img {
+
+	width: 400px;
+	height: 400px;
+	margin-right: 8%;
+}
+
+.productDeneme h1, h2, h3, h4, h5, h6{
+
+	margin-left: 6%;
+	margin-top: 3%;
+	
+}
+
+.productDeneme button{
+
+	text-align: center;
+	width: 100px;
+	margin-top: 15px;
+	margin-left: 20%;
+}
+
+.products-cont{
+	max-width: 650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightblue;
+	margin: 0 auto;
+}
+
+
+.productTitle {
+	width: 20%	;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+.priceTitle{
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	float: left;
+}
+
+.quantityTitle {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.totalTitle {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+.product{
+
+	text-align: center;
+}
+/*
+.allProducts table td, th {
+    
+    text-align: left;
+	padding: 15px;
+	
+  }
+
+.allProducts table {
+
+	border-collapse: collapse;
+	width: 100%;
+}
+*/
+
+.allProducts {
+
+    border-radius: 40px;
+    margin-top: 4%;
+    margin-right: 10%;
+
+    text-align: center;
+
+}
+
+.allProducts table{
+
+    border: 2px solid black;
+    border-collapse: collapse;
+	width: 110%;
+	table-layout: fixed;
+}
+
+.allProducts table td, th {
+    
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.totalCost {
+
+	text-align: right;
+	
+}
+
+.deleteCart{
+
+	text-align: left;
+}
+
+
+
+.purchase button {
+	
+	text-align: center;
+	float: right;
+	
+	
+}
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	right: 0;
+	left: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content-southeast {
+	background-color: #dcf06f;
+	position: fixed;
+    bottom: 40px;
+    right: 40px;
+	border: 2px solid #888;
+	width: 35%;
+	
+  }
+
+  .modal-content-southwest{
+	background-color: #dcf06f;
+	position: fixed;
+    bottom: 40px;
+    left: 40px;
+	border: 2px solid #888;
+	width: 35%;
+	
+  }
+
+  .modal-content-northeast {
+	background-color: #dcf06f;
+	position: fixed;
+    top: 80px;
+    right: 40px;
+	border: 2px solid #888;
+	width: 35%;
+	
+  }
+
+  .modal-content-northwest {
+	background-color: #dcf06f;
+	position: fixed;
+    top: 80px;
+    left: 40px;
+	border: 2px solid #888;
+	width: 35%;
+	
+  }
+
+  .modal div p{
+
+	text-align: center;
+	margin-top: 5%;
+	size: 15px;
+
+  }
+
+  .acceptButton{
+
+	text-align: center;
+	margin-bottom: 5%;
+  }
+  .acceptButton button{
+
+	background-color: #f3d1de;
+  }
+  
+  /* The Close Button */
+  .close {
+	display: block;
+	color: #1d70a0;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P8ZLL7M');</script>
+<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160445855-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160445855-2');
+</script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="tezSite.css">
+</head>
+<body onload="pageViewCounter('productRelated')">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8ZLL7M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <script>
+
+    window.onbeforeunload = function() {
+      pageTime('productRelated');
+      return undefined;
+    }
+    </script> 
+    
+  <div class="menu">
+    <a href="tez-site.html">Homepage</a>
+    <a href="about-us.html">About Us</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contacts</a>
+    <div class="card">
+      <a href="cart.html">Card <span>0</span></a>
+    </div>
+     
+  </div>
+  
+  <div class="products-cont">
+    <div class="product-header">
+
+      <h4 class="productTitle">Product</h4>
+      <h4 class="priceTitle">Price</h4>
+      <h4 class="quantityTitle">Quantity</h4>
+      <h4 class="totalTitle">Total </h4>
+    </div>
+    <div class="allProducts">
+
+    </div>
+    <div>
+
+      <button onclick="deleteCart()"> Delete Cart</button>
+    </div>
+	
+	<div class="purchase"><a href="purchase.html">
+	
+		<br></br>
+		<button onclick="purchaseClicked()">Purchase</button></a>
+	</div>
+  </div>
+  <!-- Content Start  -->
+    
+  <!--<p style="text-align: center; margin-top: 20px;"><button id="myBtn">Open Modal</button></p>-->
+  <div id="myModal" class="modal">
+
+    <div class="modal-content-southeast">
+      <span class="close">&times; </span>
+          <p id="freeShipping">Free Shipping For Your Card</p>
+	  <p id="discount">%5 Discount For Your Card</p>
+	  <p id ="giftCard">10 TL Gift Card For You</p>
+      <p class="acceptButton"><button onclick="closeModal()"> Accept Offer</button></div></p>
+      
+
+    </div>
+  </div>
+  
+  <!-- Content End -->
+  <script src="main.js"></script>
+  <script src="sessions.js"></script>
+  <script>
+    pageTimeEverySecondProduct()
+  </script>
+  <br \><br \>
+</body>
+</html>
